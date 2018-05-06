@@ -3,7 +3,6 @@ package com.company;
 public class VowelCheck{
     /*
     // *** First method ***
-
     public static boolean isVowel (char letter){
         char[] setOfVowels = new char[] {'a', 'e', 'i', 'o', 'u', 'y'};
         letter = Character.toLowerCase (letter);
@@ -15,7 +14,6 @@ public class VowelCheck{
         return false;
     }
     */
-
 
     /*
     // *** Second method ***
@@ -34,7 +32,6 @@ public class VowelCheck{
     }
     */
 
-
     // *** Third method ***
     public static boolean isVowel (char letter){
         letter = Character.toLowerCase (letter);
@@ -44,14 +41,12 @@ public class VowelCheck{
         return false;
     }
 
-
     /*
     // *** Fourth method ***
     public static boolean isVowel (char letter){
         return "aeiouy".contains ((letter + "").toLowerCase ());
     }
     */
-
 
     /*
     // *** Fifth method ***
