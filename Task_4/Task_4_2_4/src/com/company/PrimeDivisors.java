@@ -1,23 +1,26 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class PrimeDivisors{
-    public static void printPrimeDivisors (int num){ // finds all the prime divisors except the number itself
-        System.out.print ("Prime divisors: ");
-        boolean primeDivisor = false;
-        for (int i = 3; i < num; i += 2){
+
+    public static ArrayList <Integer> findPrimeDivisors (int num){ // finds all the prime divisors except the number itself
+        ArrayList <Integer> arrOfPrimeDivisors = new ArrayList <> ();
+        if (num % 2 == 0 && num != 2){
+            arrOfPrimeDivisors.add (2);
+        }
+        for (int i = 3; i <= num / 2; i += 2){
             if (num % i == 0){
                 if (isPrime (i)){
-                    System.out.print (i + " ");
-                    primeDivisor = true;
+                    arrOfPrimeDivisors.add (i);
                 }
             }
         }
-        if (!primeDivisor){
-            System.out.print ("there are no prime divisors");
-        }
+        return arrOfPrimeDivisors;
     }
 
-    public static boolean isPrime (int divisor){
+
+    private static boolean isPrime (int divisor){
         for (int i = 3; i * i <= divisor; i += 2){
             if (divisor % i == 0){
                 return false;

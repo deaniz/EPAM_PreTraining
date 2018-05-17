@@ -1,9 +1,9 @@
 public class Main{
+
     public static void main (String[] args){
         int num = 113311;
 
-        int digitsAmount = PalindromeChecker.countAmountOfDigits (num);
-        boolean isPalindrome = PalindromeChecker.isPalindrome (num, digitsAmount);
+        boolean isPalindrome = PalindromeChecker.isPalindrome (num);
 
         System.out.println ("Can be palindrome: " + isPalindrome);
     }
