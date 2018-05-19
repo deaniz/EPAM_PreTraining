@@ -16,3 +16,4 @@ public class Flipper{
         return heads;
     }
 }
+

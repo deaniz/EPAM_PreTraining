@@ -6,7 +6,7 @@ public class Main{
 
         int minimumPosition = LocMinimum.findLocMinimum (array);
 
-        System.out.print ("The position of the local minimum: ");
+        System.out.print ("The position of the first local minimum: ");
         System.out.println (minimumPosition > 0 ? minimumPosition : "There is no local minimum in the array");
     }
 }
