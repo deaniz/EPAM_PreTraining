@@ -1,3 +1,5 @@
+package com.company;
+
 import java.util.Random;
 
 public class Main{
@@ -7,9 +9,14 @@ public class Main{
         double[][] matrix = new double[3][5];
 
         initialize (matrix, leftBound, rightBound);
-        int[] minimumPosition = LocMinimum.findLocMinimum (matrix);
+        double[][] trMatrix = MatrixTransposition.transposeMatrix (matrix);
 
-        System.out.print ("The position of the first local minimum: " + minimumPosition[0] + "; " + minimumPosition[1]);
+        for (int i = 0; i < trMatrix.length; i++){
+            for (int j = 0; j < trMatrix[i].length; j++){
+                System.out.print (trMatrix[i][j] + "\t");
+            }
+            System.out.println ();
+        }
     }
 
 

@@ -1,12 +1,12 @@
 package com.company;
 
 public class ExtremeValues{
-    public static double maxValue (double[][] array){
-        double maxValue = array[0][0];
-        for (int i = 0; i < array.length; i++){
-            for (int j = 0; j < array[i].length; j++){
-                if (array[i][j] > maxValue){
-                    maxValue = array[i][j];
+    public static double maxValue (double[][] matrix){
+        double maxValue = matrix[0][0];
+        for (int i = 0; i < matrix.length; i++){
+            for (int j = 0; j < matrix[i].length; j++){
+                if (matrix[i][j] > maxValue){
+                    maxValue = matrix[i][j];
                 }
             }
         }
@@ -14,12 +14,12 @@ public class ExtremeValues{
     }
 
 
-    public static double minValue (double[][] array){
-        double minValue = array[0][0];
-        for (int i = 0; i < array.length; i++){
-            for (int j = 0; j < array[i].length; j++){
-                if (array[i][j] < minValue){
-                    minValue = array[i][j];
+    public static double minValue (double[][] matrix){
+        double minValue = matrix[0][0];
+        for (int i = 0; i < matrix.length; i++){
+            for (int j = 0; j < matrix[i].length; j++){
+                if (matrix[i][j] < minValue){
+                    minValue = matrix[i][j];
                 }
             }
         }

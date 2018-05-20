@@ -4,12 +4,13 @@ public class Main{
     public static void main (String[] args){
         double leftBound = -19.93;
         double rightBound = 10.9;
-        double[][] matrix = new double[3][5];
+        double[][] matrix = new double[5][5];
 
         initialize (matrix, leftBound, rightBound);
-        int[] minimumPosition = LocMinimum.findLocMinimum (matrix);
+        boolean isSymmetrical = SymmetricSecondaryDiagonal.isSymmetrical (matrix);
 
-        System.out.print ("The position of the first local minimum: " + minimumPosition[0] + "; " + minimumPosition[1]);
+        System.out.println ("The matrix is symmetrical relatively to the secondary diagonal: " + isSymmetrical);
+
     }
 
 
@@ -22,3 +23,6 @@ public class Main{
         }
     }
 }
+
+
+// double[][] mat = {{4, 5, 3, 9}, {7, 6, 5, 3}, {8, 4, 6, 5}, {7, 8, 7, 4}}; - symmetrical relatively to the sec. diagonal
