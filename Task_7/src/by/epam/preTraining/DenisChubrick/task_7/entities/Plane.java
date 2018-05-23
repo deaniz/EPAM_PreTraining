@@ -1,21 +1,31 @@
 package by.epam.preTraining.DenisChubrick.task_7.entities;
 
 public class Plane{
-    private float maxSpeed;
-    private float cost;
+    private String name;
+    private int maxSpeedKmH;
+    private int costUSDollars;
 
-    void setMaxSpeed(float maxSpeed){
-        this.maxSpeed = maxSpeed;
+    public void setName(String name){
+        this.name = name;
     }
-    void setCost(float cost){
-        this.cost = cost;
+    public void setMaxSpeed(int maxSpeedKmH){
+        this.maxSpeedKmH = maxSpeedKmH;
     }
-    float getMaxSpeed(){
-        return maxSpeed;
+    public void setCost(int costUSDollars){
+        this.costUSDollars = costUSDollars;
     }
-    float getCost(){
-        return cost;
+
+    public String getName(){
+        return name;
     }
+    public int getMaxSpeed(){
+        return maxSpeedKmH;
+    }
+    public int getCost(){
+        return costUSDollars;
+    }
+
+
 
 
     /*protected Plane(){

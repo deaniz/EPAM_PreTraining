@@ -1,12 +1,13 @@
 package by.epam.preTraining.DenisChubrick.task_7.entities;
 
 public class CargoPlane extends Plane{
-    public float carryingCapacity;
+    public int carryingCapacityKg;
 
-    public CargoPlane(float maxSpeed, float cost, float carryingCapacity){
-        setMaxSpeed (maxSpeed);
-        setMaxSpeed (cost);
+    public CargoPlane(String name, int maxSpeedKmH, int costUSDollars, int carryingCapacityKg){
+        setName (name);
+        setMaxSpeed (maxSpeedKmH);
+        setCost (costUSDollars);
 
-        this.carryingCapacity = carryingCapacity;
+        this.carryingCapacityKg = carryingCapacityKg;
     }
 }
