@@ -78,11 +78,6 @@ public class Airline{
     }
 
 
-    public int getCurrentPlaneAmount (){
-        return currentPlanesAmount;
-    }
-
-
     public void expandPlanes (){
         Plane[] tmpPlanes = new Plane[planes.length * 2];
         for (int i = 0; i < planes.length; i++){
@@ -111,6 +106,43 @@ public class Airline{
     }
 
 
+    public boolean hasThisPlane (String plName){
+        for (int i = 0; i < planes.length; i++)
+            mark:{
+                if (planes[i] == null){
+                    i++;
+                    break mark;
+                }
+                if (planes[i].getName ().toLowerCase ().equals (plName.toLowerCase ())){
+                    return true;
+                }
+            }
+        return false;
+    }
+
+
+    public Plane[] criterionSearch (String planeName){ //if (planes[i].getName ().toLowerCase ().indexOf (planeName.toLowerCase ()) != -1){
+        Plane[] planeArray = new Plane[planes.length];
+        for (int i = 0; i < planes.length; i++){
+            if (planes[i].getName ().toLowerCase ().contains (planeName.toLowerCase ())){
+                planeArray[i] = planes[i];
+            }
+        }
+        return planeArray;
+    }
+
+
+    public void deletePlane (int plNumber){
+        planes[plNumber] = null;
+        currentPlanesAmount--;
+    }
+
+
+    public void clearAirline (){
+        planes = null;
+    }
+
+
     @Override
     public int hashCode (){
         return (planes[0].getCost () + planes[0].getMaxSpeed ()) / planes.length;
@@ -135,40 +167,5 @@ public class Airline{
     @Override
     public String toString (){
         return "Amount of planes " + currentPlanesAmount;
-    }
-
-    public boolean hasThisPlane (String plName){
-        for (int i = 0; i < planes.length; i++)
-            mark:{
-                if (planes[i] == null){
-                    i++;
-                    break mark;
-                }
-                if (planes[i].getName ().equals (plName)){
-                    return true;
-                }
-            }
-        return false;
-    }
-
-
-    public Plane[] criterionSearch (String planeName){ //if (planes[i].getName ().toLowerCase ().indexOf (planeName.toLowerCase ()) != -1){
-        Plane[] planeArray = new Plane[planes.length];
-        for (int i = 0; i < planes.length; i++){
-            if (planes[i].getName ().toLowerCase ().contains (planeName.toLowerCase ())){
-                planeArray[i] = planes[i];
-            }
-        }
-        return planeArray;
-    }
-
-
-    public void deletePlane (int plNumber){
-        planes[plNumber] = null;
-    }
-
-
-    public void clearAirline (){
-        planes = null;
     }
 }

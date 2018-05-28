@@ -1,5 +1,6 @@
 package by.epam.preTraining.DenisChubrick.task_7.utilities;
 
+import by.epam.preTraining.DenisChubrick.task_7.businessLogic.BubbleSort;
 import by.epam.preTraining.DenisChubrick.task_7.businessLogic.MostExpensivePlane;
 import by.epam.preTraining.DenisChubrick.task_7.businessLogic.TotalCost;
 import by.epam.preTraining.DenisChubrick.task_7.entities.Airline;
@@ -34,7 +35,7 @@ public class Main{
         System.out.println ("Airline has Airbus A380: " + airline.hasThisPlane (plane8.getName ()));
 
 
-        System.out.println ("Current amount of planes: " + airline.getCurrentPlaneAmount ());
+        System.out.println ("Current amount of planes: " + airline.getCurrentPlanesAmount ());
 
 
         System.out.println ("Airline park is empty: " + airline.isEmpty ());
@@ -62,8 +63,16 @@ public class Main{
         System.out.println ("Total cost of all the planes: " + totalCost);
 
 
+        Plane[] sortedArrOfPlanes = BubbleSort.sortByCost (airline.getPlanes ());
+        for (Plane i : sortedArrOfPlanes){
+            if (i != null){
+                System.out.print (i.getCost () + "; ");
+            }
+        }
+
+
         airline.deletePlane (2);
-        System.out.println ("Current amount of planes: " + airline.getCurrentPlaneAmount ());
+        System.out.println ("\nCurrent amount of planes: " + airline.getCurrentPlanesAmount ());
 
 
         airline.clearAirline ();
