@@ -1,42 +1,42 @@
 package by.epam.preTraining.DenisChubrick.task_7.entities;
 
-import by.epam.preTraining.DenisChubrick.task_7.entities.Plane;
 
 public class Airline{
-    private Plane[] planes; // = new Plane[10]; ???
+    public static final int DEFAULTSEATAMOUNT = 10;
+
+    private Plane[] planes;
     private int currentPlanesAmount;
 
 
     public Airline (){
-        planes = new Plane[10];
-        currentPlanesAmount = 0;
+        planes = new Plane[DEFAULTSEATAMOUNT];
     }
 
     public Airline (Plane[] arrOfPlanes){
-        planes = new Plane[10];
+        planes = new Plane[arrOfPlanes.length];
         for (int i = 0; i < arrOfPlanes.length; i++){
             planes[i] = arrOfPlanes[i];
             currentPlanesAmount++;
         }
     }
 
-    /*public Airline(int planesAmount){
-        this.currentPlanesAmount = planesAmount;
-        planes = new Plane[planesAmount];
+
+    public Plane[] getPlanes (){
+        return planes;
     }
-    */
 
 
     public void addPlane (Plane plane){
-        if (currentPlanesAmount == planes.length){ // currentPlanesAmount == planes.length
+        if (currentPlanesAmount == planes.length){
             expandPlanes ();
         }
         planes[currentPlanesAmount] = plane;
         currentPlanesAmount++;
     }
 
+
     public void addSeveralPlanes (Plane[] severalPlanes){
-        int elem = planes.length - severalPlanes.length;
+        int elem = planes.length - severalPlanes.length; // an intermediary???
 
         if (severalPlanes.length < planes.length && planes[elem] == null && !needsExpansion (elem)){
             for (int i = 0; i < severalPlanes.length; i++, elem++){
@@ -44,7 +44,6 @@ public class Airline{
                 currentPlanesAmount++;
             }
         }
-
         else{
             expandPlanes ();
             int elmnt = planes.length / 2;
@@ -65,9 +64,11 @@ public class Airline{
         return false;
     }
 
+
     public int getCurrentPlaneAmount (){
         return currentPlanesAmount;
     }
+
 
     public void expandPlanes (){
         Plane[] tmpPlanes = new Plane[planes.length * 2];
@@ -77,6 +78,7 @@ public class Airline{
         planes = tmpPlanes;
         tmpPlanes = null;
     }
+
 
     public boolean isEmpty (){
         if (planes == null){
@@ -89,6 +91,7 @@ public class Airline{
         }
         return true;
     }
+
 
     public Plane getInfo (int i){
         return planes[i];
@@ -109,13 +112,16 @@ public class Airline{
         return false;
     }
 
-    /*
-    public void showAllPlanes(){
+
+    public Plane[] criterionSearch (String planeName){ //if (planes[i].getName ().toLowerCase ().indexOf (planeName.toLowerCase ()) != -1){
+        Plane[] planeArray = new Plane[planes.length];
         for (int i = 0; i < planes.length; i++){
-            System.out.println (planes[i].getName () + ", ");
+            if (planes[i].getName ().toLowerCase ().contains (planeName.toLowerCase ())){
+                planeArray[i] = planes[i];
+            }
         }
+        return planeArray;
     }
-    */
 
 
     public void deletePlane (int plNumber){
@@ -127,58 +133,3 @@ public class Airline{
         planes = null;
     }
 }
-
-/*
-
-if (severalPlanes.length < planes.length){
-            if (planes[elem] == null && !needsExpansion (elem)){
-                for (int i = 0; i < severalPlanes.length; i++, elem++){
-                    planes[elem] = severalPlanes[i];
-                }
-            }
-            else {
-                expandPlanes ();
-                int elmnt = planes.length / 2;
-                for (int i = 0; i < severalPlanes.length; i++, elem++){
-                    planes[elmnt] = severalPlanes[i];
-                }
-            }
-        }
-
-        else {
-            expandPlanes ();
-            int elmnt = planes.length / 2;
-            for (int i = 0; i < severalPlanes.length; i++, elmnt++){
-                planes[elmnt] = severalPlanes[i];
-            }
-        }
-
- */
-
-
-
-
-
-
-/*
-public void addSeveralPlanes(Plane[] severalPlanes){
-        int elem = planes.length - severalPlanes.length;
-        if (severalPlanes.length < planes.length){
-            if (planes[elem] == null){
-                for (int i = 0; i < severalPlanes.length; i++, elem++){
-                    planes[elem] = severalPlanes[i];
-                }
-            }
-            else {
-                expandPlanes ();
-                for (int i = 0; i < severalPlanes.length; i++, elem++){
-                    planes[elem] = severalPlanes[i];
-                }
-
-            }
-        }
-        else {
-            expandPlanes ();
-        }
-    }
- */

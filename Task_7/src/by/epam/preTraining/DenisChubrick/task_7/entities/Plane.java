@@ -5,39 +5,64 @@ public class Plane{
     private int maxSpeedKmH;
     private int costUSDollars;
 
-    public void setName(String name){
+
+    public Plane (){
+        this ("plane", 900, 1_500_000);
+    }
+
+    public Plane (String name, int maxSpeedKmH, int costUSDollars){
         this.name = name;
-    }
-    public void setMaxSpeed(int maxSpeedKmH){
         this.maxSpeedKmH = maxSpeedKmH;
-    }
-    public void setCost(int costUSDollars){
         this.costUSDollars = costUSDollars;
     }
 
-    public String getName(){
+    public Plane (Plane plane){
+        this (plane.name, plane.maxSpeedKmH, plane.costUSDollars);
+    }
+
+
+    void setName (String name){
+        this.name = name;
+    }
+
+    void setMaxSpeed (int maxSpeedKmH){
+        this.maxSpeedKmH = maxSpeedKmH;
+    }
+
+    void setCost (int costUSDollars){
+        this.costUSDollars = costUSDollars;
+    }
+
+    public String getName (){
         return name;
     }
-    public int getMaxSpeed(){
+
+    public int getMaxSpeed (){
         return maxSpeedKmH;
     }
-    public int getCost(){
+
+    public int getCost (){
         return costUSDollars;
     }
 
 
-
-
-    /*protected Plane(){
-        maxSpeed = 0;
-        cost = 0;
+    @Override
+    public int hashCode (){
+        return (maxSpeedKmH + costUSDollars) / maxSpeedKmH;
     }
-    */
 
-    /*protected Plane(float maxSpeed, float cost){
-        this.maxSpeed = maxSpeed;
-        this.cost = cost;
+    @Override
+    public boolean equals (Object obj){
+        if (obj instanceof Plane){
+            Plane plane = (Plane) obj;
+            return name.compareTo (
+                    plane.name) == 0 && maxSpeedKmH == plane.maxSpeedKmH && costUSDollars == plane.costUSDollars;
+        }
+        return false;
     }
-    */
 
+    @Override
+    public String toString (){
+        return "Plane " + name + ", max speed " + maxSpeedKmH;
+    }
 }

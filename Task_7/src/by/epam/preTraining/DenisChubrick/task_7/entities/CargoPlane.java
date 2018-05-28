@@ -1,9 +1,9 @@
 package by.epam.preTraining.DenisChubrick.task_7.entities;
 
 public class CargoPlane extends Plane{
-    public int carryingCapacityKg;
+    private int carryingCapacityKg;
 
-    public CargoPlane(String name, int maxSpeedKmH, int costUSDollars, int carryingCapacityKg){
+    public CargoPlane (String name, int maxSpeedKmH, int costUSDollars, int carryingCapacityKg){
         setName (name);
         setMaxSpeed (maxSpeedKmH);
         setCost (costUSDollars);
