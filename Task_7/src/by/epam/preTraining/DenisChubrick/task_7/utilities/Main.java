@@ -68,6 +68,5 @@ public class Main{
 
         airline.clearAirline ();
         System.out.println ("Airline park is empty: " + airline.isEmpty ());
-
     }
 }

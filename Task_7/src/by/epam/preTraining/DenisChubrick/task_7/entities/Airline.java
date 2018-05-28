@@ -4,6 +4,7 @@ package by.epam.preTraining.DenisChubrick.task_7.entities;
 public class Airline{
     public static final int DEFAULTSEATAMOUNT = 10;
 
+
     private Plane[] planes;
     private int currentPlanesAmount;
 
@@ -20,9 +21,21 @@ public class Airline{
         }
     }
 
+    public Airline (Airline airline){
+        this (airline.planes);
+    }
+
+
+    public void setPlanes (Plane[] planes){
+        this.planes = planes;
+    }
 
     public Plane[] getPlanes (){
         return planes;
+    }
+
+    public int getCurrentPlanesAmount (){
+        return currentPlanesAmount;
     }
 
 
@@ -97,6 +110,32 @@ public class Airline{
         return planes[i];
     }
 
+
+    @Override
+    public int hashCode (){
+        return (planes[0].getCost () + planes[0].getMaxSpeed ()) / planes.length;
+    }
+
+    @Override
+    public boolean equals (Object obj){
+        if (obj instanceof Airline){
+            Airline airline = (Airline) obj;
+            if (planes.length != airline.planes.length){
+                return false;
+            }
+            for (int i = 0; i < airline.planes.length; i++){
+                if (planes[i] != airline.planes[i]){
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public String toString (){
+        return "Amount of planes " + currentPlanesAmount;
+    }
 
     public boolean hasThisPlane (String plName){
         for (int i = 0; i < planes.length; i++)
