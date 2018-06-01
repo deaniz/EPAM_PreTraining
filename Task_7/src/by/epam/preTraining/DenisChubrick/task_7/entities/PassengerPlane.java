@@ -8,4 +8,18 @@ public class PassengerPlane extends Plane{
 
         this.seatingCapacity = seatingCapacity;
     }
+
+
+    @Override
+    public String toString (){
+        return "Plane: " + getName () + ", max speed: " + getMaxSpeed () + ", cost: " + getCost () + ", seating capacity: " + seatingCapacity;
+    }
+
+
+    public void setSeatingCapacity (int seatingCapacity){
+        this.seatingCapacity = seatingCapacity;
+    }
+    public int getSeatingCapacity(){
+        return seatingCapacity;
+    }
 }

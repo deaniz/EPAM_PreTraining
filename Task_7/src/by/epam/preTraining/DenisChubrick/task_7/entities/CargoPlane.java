@@ -8,4 +8,18 @@ public class CargoPlane extends Plane{
 
         this.carryingCapacityKg = carryingCapacityKg;
     }
+
+
+    @Override
+    public String toString (){
+        return "Plane: " + getName () + ", max speed: " + getMaxSpeed () + ", cost: " + getCost () + ", carrying capacity: " + carryingCapacityKg;
+    }
+
+    public void setCarryingCapacityKg (int carryingCapacityKg){
+        this.carryingCapacityKg = carryingCapacityKg;
+    }
+
+    public int getCarryingCapacityKg (){
+        return carryingCapacityKg;
+    }
 }

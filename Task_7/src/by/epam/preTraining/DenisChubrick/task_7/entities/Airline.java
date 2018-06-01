@@ -12,7 +12,6 @@ public class Airline{
     public Airline (){
         planes = new Plane[DEFAULTSEATAMOUNT];
     }
-
     public Airline (Plane[] arrOfPlanes){
         planes = new Plane[arrOfPlanes.length];
         for (int i = 0; i < arrOfPlanes.length; i++){
@@ -20,15 +19,15 @@ public class Airline{
             currentPlanesAmount++;
         }
     }
-
     public Airline (Airline airline){
-        this (airline.planes);
+        this (airline.planes); // field currentPlanesAmount is not copied???
     }
+
 
 
     public void setPlanes (Plane[] planes){
         this.planes = planes;
-    }
+    } // setCurrentPlanesAmount???
 
     public Plane[] getPlanes (){
         return planes;
@@ -37,6 +36,35 @@ public class Airline{
     public int getCurrentPlanesAmount (){
         return currentPlanesAmount;
     }
+
+
+
+    @Override
+    public int hashCode (){
+        return (planes[0].getCost () + planes[0].getMaxSpeed ()) / planes.length;
+    }
+
+    @Override
+    public boolean equals (Object obj){
+        if (obj instanceof Airline){
+            Airline airline = (Airline) obj;
+            if (planes.length != airline.planes.length){
+                return false;
+            }
+            for (int i = 0; i < airline.planes.length; i++){
+                if (planes[i] != airline.planes[i]){
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public String toString (){
+        return "Amount of planes " + currentPlanesAmount; //java.util.Arrays.toString (planes)
+    }
+
 
 
     public void addPlane (Plane plane){
@@ -48,28 +76,27 @@ public class Airline{
     }
 
 
-    public void addSeveralPlanes (Plane[] severalPlanes){
-        int elem = planes.length - severalPlanes.length; // an intermediary???
-
-        if (severalPlanes.length < planes.length && planes[elem] == null && !needsExpansion (elem)){
-            for (int i = 0; i < severalPlanes.length; i++, elem++){
-                planes[elem] = severalPlanes[i];
+    public void addSeveralPlanes (Plane[] severalPlanes){ // an intermediary???
+        int j = planes.length - severalPlanes.length;
+        if (severalPlanes.length < planes.length && planes[j] == null && !needsExpansion (j)){
+            for (int i = 0; i < severalPlanes.length; i++, j++){
+                planes[j] = severalPlanes[i];
                 currentPlanesAmount++;
             }
         }
         else{
             expandPlanes ();
-            int elmnt = planes.length / 2;
-            for (int i = 0; i < severalPlanes.length; i++, elmnt++){
-                planes[elmnt] = severalPlanes[i];
+            int k = planes.length / 2;
+            for (int i = 0; i < severalPlanes.length; i++, k++){
+                planes[k] = severalPlanes[i];
                 currentPlanesAmount++;
             }
         }
     }
 
 
-    private boolean needsExpansion (int elem){
-        for (int i = elem + 1; i < planes.length; i++){
+    private boolean needsExpansion (int j){
+        for (int i = j + 1; i < planes.length; i++){
             if (planes[i] != null){
                 return true;
             }
@@ -78,7 +105,7 @@ public class Airline{
     }
 
 
-    public void expandPlanes (){
+    private void expandPlanes (){
         Plane[] tmpPlanes = new Plane[planes.length * 2];
         for (int i = 0; i < planes.length; i++){
             tmpPlanes[i] = planes[i];
@@ -121,7 +148,7 @@ public class Airline{
     }
 
 
-    public Plane[] criterionSearch (String planeName){ //if (planes[i].getName ().toLowerCase ().indexOf (planeName.toLowerCase ()) != -1){
+    public Plane[] criterionSearch (String planeName){ //DELETE THIS!!!!!!!
         Plane[] planeArray = new Plane[planes.length];
         for (int i = 0; i < planes.length; i++){
             if (planes[i].getName ().toLowerCase ().contains (planeName.toLowerCase ())){
@@ -140,32 +167,6 @@ public class Airline{
 
     public void clearAirline (){
         planes = null;
-    }
-
-
-    @Override
-    public int hashCode (){
-        return (planes[0].getCost () + planes[0].getMaxSpeed ()) / planes.length;
-    }
-
-    @Override
-    public boolean equals (Object obj){
-        if (obj instanceof Airline){
-            Airline airline = (Airline) obj;
-            if (planes.length != airline.planes.length){
-                return false;
-            }
-            for (int i = 0; i < airline.planes.length; i++){
-                if (planes[i] != airline.planes[i]){
-                    return false;
-                }
-            }
-        }
-        return false;
-    }
-
-    @Override
-    public String toString (){
-        return "Amount of planes " + currentPlanesAmount;
+        currentPlanesAmount = 0;
     }
 }

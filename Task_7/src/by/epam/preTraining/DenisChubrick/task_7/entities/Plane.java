@@ -63,6 +63,6 @@ public class Plane{
 
     @Override
     public String toString (){
-        return "Plane " + name + ", max speed " + maxSpeedKmH;
+        return "Plane: " + name + ", max speed: " + maxSpeedKmH + ", cost: " + costUSDollars;
     }
 }
