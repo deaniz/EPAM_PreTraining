@@ -20,14 +20,18 @@ public class Airline{
         }
     }
     public Airline (Airline airline){
-        this (airline.planes); // field currentPlanesAmount is not copied???
+        this (airline.planes); // field currentPlanesAmount is not copied????????
     }
 
 
 
     public void setPlanes (Plane[] planes){
         this.planes = planes;
-    } // setCurrentPlanesAmount???
+    }
+
+    public void setCurrentPlanesAmount (int currentPlanesAmount){ // is needed?????????
+        this.currentPlanesAmount = currentPlanesAmount;
+    }
 
     public Plane[] getPlanes (){
         return planes;
@@ -41,12 +45,18 @@ public class Airline{
 
     @Override
     public int hashCode (){
-        return (planes[0].getCost () + planes[0].getMaxSpeed ()) / planes.length;
+        return planes[0].getCost () / (planes.length + planes[1].getMaxSpeed ());
     }
 
     @Override
     public boolean equals (Object obj){
-        if (obj instanceof Airline){
+        if (obj == null){
+            return false;
+        }
+        if (this == obj){
+            return true;
+        }
+        if (getClass () == obj.getClass ()){ // obj instanceof Airline
             Airline airline = (Airline) obj;
             if (planes.length != airline.planes.length){
                 return false;
@@ -56,6 +66,7 @@ public class Airline{
                     return false;
                 }
             }
+            return true;
         }
         return false;
     }
@@ -145,17 +156,6 @@ public class Airline{
                 }
             }
         return false;
-    }
-
-
-    public Plane[] criterionSearch (String planeName){ //DELETE THIS!!!!!!!
-        Plane[] planeArray = new Plane[planes.length];
-        for (int i = 0; i < planes.length; i++){
-            if (planes[i].getName ().toLowerCase ().contains (planeName.toLowerCase ())){
-                planeArray[i] = planes[i];
-            }
-        }
-        return planeArray;
     }
 
 

@@ -112,6 +112,9 @@ public class Airline{
 
     @Override
     public boolean equals (Object obj){
+        if (obj == null){
+            return false;
+        }
         if (obj instanceof Airline){
             Airline airline = (Airline) obj;
             if (head != airline.head){

@@ -1,9 +1,11 @@
 package by.epam.preTraining.DenisChubrick.task_7.utilities;
 
+
 import by.epam.preTraining.DenisChubrick.task_7.entities.Airline;
 import by.epam.preTraining.DenisChubrick.task_7.entities.CargoPlane;
 import by.epam.preTraining.DenisChubrick.task_7.entities.PassengerPlane;
 import by.epam.preTraining.DenisChubrick.task_7.entities.Plane;
+
 
 public class Creator{
     public Airline createAirline (){
@@ -17,6 +19,7 @@ public class Creator{
         arrOfPlanes[1] = plane2;
         arrOfPlanes[2] = plane3;
         arrOfPlanes[3] = plane4;
+
         return new Airline (arrOfPlanes);
     }
 }

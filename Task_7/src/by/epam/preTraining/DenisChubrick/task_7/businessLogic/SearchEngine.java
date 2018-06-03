@@ -1,8 +1,10 @@
 package by.epam.preTraining.DenisChubrick.task_7.businessLogic;
 
+
 import by.epam.preTraining.DenisChubrick.task_7.entities.CargoPlane;
 import by.epam.preTraining.DenisChubrick.task_7.entities.PassengerPlane;
 import by.epam.preTraining.DenisChubrick.task_7.entities.Plane;
+
 
 public class SearchEngine{
     public static PassengerPlane[] findPlanesWithManySeats (Plane[] planes){ // seating capacity >= 150
@@ -24,6 +26,7 @@ public class SearchEngine{
         }
         return result;
     }
+
 
 
     public static CargoPlane[] findPlanesWithGoodCarrCapacity (Plane[] planes){ // carrying capacity >= 113_000 kg

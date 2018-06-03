@@ -1,13 +1,15 @@
 package by.epam.preTraining.DenisChubrick.task_7.entities;
 
+
 public class Plane{
     private String name;
     private int maxSpeedKmH;
     private int costUSDollars;
 
 
+
     public Plane (){
-        this ("plane", 900, 1_500_000);
+        this ("Airbus A322", 950, 1_700_000);
     }
 
     public Plane (String name, int maxSpeedKmH, int costUSDollars){
@@ -19,6 +21,7 @@ public class Plane{
     public Plane (Plane plane){
         this (plane.name, plane.maxSpeedKmH, plane.costUSDollars);
     }
+
 
 
     void setName (String name){
@@ -46,6 +49,7 @@ public class Plane{
     }
 
 
+
     @Override
     public int hashCode (){
         return (maxSpeedKmH + costUSDollars) / maxSpeedKmH;
@@ -53,7 +57,13 @@ public class Plane{
 
     @Override
     public boolean equals (Object obj){
-        if (obj instanceof Plane){
+        if (obj == null){
+            return false;
+        }
+        if (this == obj){
+            return true;
+        }
+        if (getClass () == obj.getClass ()){ // obj instanceof Plane
             Plane plane = (Plane) obj;
             return name.compareTo (
                     plane.name) == 0 && maxSpeedKmH == plane.maxSpeedKmH && costUSDollars == plane.costUSDollars;
