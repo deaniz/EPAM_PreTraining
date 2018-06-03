@@ -1,6 +1,8 @@
 package by.epam.preTraining.DenisChubrick.task_7.utilities;
 
+import by.epam.preTraining.DenisChubrick.task_7.businessLogic.MostExpensivePlane;
 import by.epam.preTraining.DenisChubrick.task_7.businessLogic.SearchEngine;
+import by.epam.preTraining.DenisChubrick.task_7.businessLogic.TotalCost;
 import by.epam.preTraining.DenisChubrick.task_7.entities.Airline;
 import by.epam.preTraining.DenisChubrick.task_7.entities.CargoPlane;
 import by.epam.preTraining.DenisChubrick.task_7.entities.PassengerPlane;
@@ -24,6 +26,7 @@ public class Main{
         severalPlanes[0] = plane6;
         severalPlanes[1] = plane7;
         severalPlanes[2] = plane8;
+
         airline.addSeveralPlanes (severalPlanes);
         for (int i = 0; i < airline.getPlanes ().length; i++){
             if (airline.getPlanes ()[i] != null){
@@ -63,6 +66,10 @@ public class Main{
                 Printer.printOut (array2[i]);
             }
         }
+
+
+        Printer.printOut(TotalCost.countTotalCost (airline.getPlanes ()));
+        Printer.printOut (MostExpensivePlane.findMostExpensive (airline.getPlanes ()));
 
 
         airline.clearAirline ();

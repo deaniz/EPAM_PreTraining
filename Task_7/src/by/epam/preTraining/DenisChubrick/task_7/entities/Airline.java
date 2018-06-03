@@ -2,7 +2,7 @@ package by.epam.preTraining.DenisChubrick.task_7.entities;
 
 
 public class Airline{
-    public static final int DEFAULTSEATAMOUNT = 10;
+    public static final int DEFAULT_SEAT_AMOUNT = 10;
 
 
     private Plane[] planes;
@@ -10,7 +10,7 @@ public class Airline{
 
 
     public Airline (){
-        planes = new Plane[DEFAULTSEATAMOUNT];
+        planes = new Plane[DEFAULT_SEAT_AMOUNT];
     }
     public Airline (Plane[] arrOfPlanes){
         planes = new Plane[arrOfPlanes.length];
@@ -73,7 +73,7 @@ public class Airline{
 
     @Override
     public String toString (){
-        return "Amount of planes " + currentPlanesAmount; //java.util.Arrays.toString (planes)
+        return "Amount of planes " + currentPlanesAmount;
     }
 
 

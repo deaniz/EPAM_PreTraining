@@ -4,9 +4,14 @@ import by.epam.preTraining.DenisChubrick.task_7.entities.Plane;
 
 public class TotalCost{
     public static int countTotalCost (Plane[] planes){
+        if (planes == null){
+            return 0;
+        }
         int totalCost = 0;
         for (int i = 0; i < planes.length; i++){
-            totalCost += planes[i].getCost ();
+            if (planes[i] != null){
+                totalCost += planes[i].getCost ();
+            }
         }
         return totalCost;
     }
