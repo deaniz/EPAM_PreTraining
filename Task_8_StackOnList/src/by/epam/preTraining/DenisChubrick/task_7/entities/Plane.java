@@ -57,7 +57,12 @@ public class Plane{
 
     @Override
     public int hashCode (){
-        return (maxSpeedKmH + costUSDollars) / maxSpeedKmH;
+        final int prime = 3;
+        int result = 1;
+        result = prime * result + maxSpeedKmH;
+        result = prime * result + costUSDollars / 1_000;
+        result = prime * result + name.length ();
+        return result;
     }
 
     @Override

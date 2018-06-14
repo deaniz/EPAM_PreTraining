@@ -124,7 +124,7 @@ public class Airline{
 
     public boolean hasThisPlane (String plName){
         Plane tmp = head;
-        for (; ; ){
+        while (true){
             if (tmp.getName ().toLowerCase ().equals (plName.toLowerCase ())){
                 return true;
             }

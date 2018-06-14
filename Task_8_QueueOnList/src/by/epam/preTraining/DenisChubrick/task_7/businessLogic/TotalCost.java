@@ -9,7 +9,7 @@ public class TotalCost{
         }
         int totalCost = 0;
         Plane tmp = head;
-        for (; ; ){
+        while (true){
             if (tmp.getNext () != null){
                 totalCost += tmp.getCost ();
                 tmp = tmp.getNext ();

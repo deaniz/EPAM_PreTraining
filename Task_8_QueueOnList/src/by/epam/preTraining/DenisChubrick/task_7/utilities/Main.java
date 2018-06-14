@@ -28,7 +28,7 @@ public class Main{
         severalPlanes[2] = plane8;
         airline.enqueueSeveralPlanes (severalPlanes);
         Plane tmp = airline.getHead ();
-        for (; ; ){
+        while (true){
             if (tmp.getNext () != null){
                 Printer.printOut (tmp);
                 tmp = tmp.getNext ();

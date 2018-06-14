@@ -28,7 +28,7 @@ public class Main{
         severalPlanes[2] = plane8;
         airline.pushSeveral (severalPlanes);
         Plane tmp = airline.getHead ();
-        for (; ; ){
+        while (true){
             if (tmp.getPrev () != null){
                 Printer.printOut (tmp);
                 tmp = tmp.getPrev ();

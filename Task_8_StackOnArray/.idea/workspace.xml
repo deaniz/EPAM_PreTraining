@@ -16,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/utilities/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,7 +40,7 @@
       <file leaf-file-name="Airline.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/Airline.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
+            <state relative-caret-position="470">
               <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
               <folding>
                 <element signature="method#Airline#0;class#Airline#0" />
@@ -54,13 +54,13 @@
       <file leaf-file-name="Plane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/Plane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+            <state relative-caret-position="268">
+              <caret line="62" column="22" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="62" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Creator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Creator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/utilities/Creator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -75,8 +75,8 @@
       <file leaf-file-name="PassengerPlane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/PassengerPlane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="307">
+              <caret line="42" column="22" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="42" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -84,8 +84,8 @@
       <file leaf-file-name="CargoPlane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/CargoPlane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="476">
+              <caret line="43" column="22" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="43" selection-end-column="22" />
               <folding>
                 <element signature="method#CargoPlane#2;class#CargoPlane#0" />
               </folding>
@@ -97,12 +97,12 @@
         <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/MostExpensivePlane.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TotalCost.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TotalCost.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/TotalCost.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -138,14 +138,14 @@
         <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/utilities/Printer.java" />
         <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/SearchEngine.java" />
-        <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/PassengerPlane.java" />
-        <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/CargoPlane.java" />
-        <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/Plane.java" />
         <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/MostExpensivePlane.java" />
         <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/TotalCost.java" />
-        <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/utilities/Creator.java" />
         <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/Airline.java" />
         <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/utilities/Main.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/Plane.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/PassengerPlane.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/CargoPlane.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/utilities/Creator.java" />
       </list>
     </option>
   </component>
@@ -160,6 +160,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,13 +205,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task_7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task_8_StackOnList" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -311,24 +311,24 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50064266" side_tool="true" weight="0.32882273" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.32882273" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4993573" weight="0.32882273" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2577121" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26092544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991881" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32882273" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32882273" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -613,10 +613,41 @@
     <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/QuickSort.java" />
     <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/BubbleSort.java" />
     <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/SearchEngine.java" />
+    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/TotalCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/MostExpensivePlane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/PassengerPlane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="42" column="22" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/CargoPlane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="43" column="22" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <element signature="method#CargoPlane#2;class#CargoPlane#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/utilities/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -636,13 +667,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/Airline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
+        <state relative-caret-position="470">
           <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
           <folding>
             <element signature="method#Airline#0;class#Airline#0" />
             <element signature="method#Airline#1;class#Airline#0" />
             <element signature="method#Airline#2;class#Airline#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/Plane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="62" column="22" lean-forward="true" selection-start-line="57" selection-start-column="7" selection-end-line="62" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -653,44 +691,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/Plane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/PassengerPlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/entities/CargoPlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="method#CargoPlane#2;class#CargoPlane#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/MostExpensivePlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/preTraining/DenisChubrick/task_7/businessLogic/TotalCost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -35,7 +35,13 @@ public class CargoPlane extends Plane{
 
     @Override
     public int hashCode (){
-        return (getMaxSpeed () + getCost ()) / carryingCapacityKg;
+        final int prime = 3;
+        int result = 1;
+        result = prime * result + getMaxSpeed ();
+        result = prime * result + getCost () / 1_000;
+        result = prime * result + getName ().length ();
+        result = prime * result + carryingCapacityKg;
+        return result;
     }
 
     @Override

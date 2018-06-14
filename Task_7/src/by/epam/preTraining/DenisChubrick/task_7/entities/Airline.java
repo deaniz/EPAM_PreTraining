@@ -45,7 +45,12 @@ public class Airline{
 
     @Override
     public int hashCode (){
-        return planes[0].getCost () / (planes.length + planes[1].getMaxSpeed ());
+        final int prime = 3;
+        int result = 1;
+        result = prime * result + planes.length;
+        result = prime * result + planes[0].getCost () / 1_000;
+        result = prime * result + planes[0].getMaxSpeed ();
+        return result;
     }
 
     @Override

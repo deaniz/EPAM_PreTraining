@@ -34,7 +34,13 @@ public class PassengerPlane extends Plane{
 
     @Override
     public int hashCode (){
-        return (getMaxSpeed () + getCost ()) / seatingCapacity;
+        final int prime = 3;
+        int result = 1;
+        result = prime * result + getMaxSpeed ();
+        result = prime * result + getCost () / 1_000;
+        result = prime * result + getName ().length ();
+        result = prime * result + seatingCapacity;
+        return result;
     }
 
     @Override

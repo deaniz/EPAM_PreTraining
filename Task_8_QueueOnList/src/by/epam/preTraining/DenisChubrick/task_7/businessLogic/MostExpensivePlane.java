@@ -9,7 +9,7 @@ public class MostExpensivePlane{
         }
         Plane mostExpensive = head;
         Plane tmp = head;
-        for (; ; ){
+        while (true){
             if (tmp.getNext () != null){
                 if (tmp.getNext ().getCost () > mostExpensive.getCost ()){
                     mostExpensive = tmp.getNext ();
